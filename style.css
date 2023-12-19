@@ -1,0 +1,31 @@
+/* Add your custom styles here */
+
+.add-to-cart-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-count {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.quantity-input {
+  width: 50px;
+}
+
+.remove-item {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-item:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

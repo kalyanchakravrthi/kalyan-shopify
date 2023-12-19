@@ -1,0 +1,34 @@
+{% schema %}
+{
+  "name": "Product Template",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "product-details",
+      "name": "Product Details"
+    },
+    {
+      "type": "product-variations",
+      "name": "Product Variations"
+    },
+    {
+      "type": "custom-content",
+      "name": "Custom Content"
+    },
+    {
+      "type": "add-to-cart",
+      "name": "Add to Cart"
+    }
+  ]
+}
+{% endschema %}
+
+{% template "product" %}
+
+{% content_for_header %}
+  {{ 'product-template.css' | asset_url | stylesheet_tag }}
+{% endcontent_for_header %}
+
+{% content_for_header %}
+  {{ 'product-template.js' | asset_url | script_tag }}
+{% endcontent_for_header %}
